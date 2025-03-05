@@ -42,6 +42,8 @@ require_once plugin_dir_path( __FILE__ ) . 'constants.php';
 // Include API.
 require_once plugin_dir_path( __FILE__ ) . 'library/class-api.php';
 
+require_once plugin_dir_path( __FILE__ ) . 'antispam-integration-sdk/antispam.php';
+
 // Register activation hook.
 register_activation_hook( __FILE__, array( 'Forminator', 'activation_hook' ) );
 // Register deactivation hook.
