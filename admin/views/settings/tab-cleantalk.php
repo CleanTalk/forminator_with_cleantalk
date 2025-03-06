@@ -10,7 +10,7 @@ $nonce                    = wp_create_nonce( 'forminator_save_popup_uninstall_se
     </div>
 
     <div class="sui-box-body">
-        <?php echo antispam_render_key_form(); ?>
+        <?php echo apbct_sdk_render_key_form(); ?>
     </div>
 
 </div>

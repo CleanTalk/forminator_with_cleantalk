@@ -462,7 +462,7 @@ abstract class Forminator_Front_Action {
 			$response['message'] = wp_kses_post( $response['message'] );
 		}
 
-        if ($response = antispam_check_is_spam($_POST)) {
+        if ($response = apbct_sdk_check_is_spam($_POST)) {
             wp_send_json_error($response);
         }
 
