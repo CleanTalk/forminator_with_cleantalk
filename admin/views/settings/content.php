@@ -19,6 +19,7 @@ $sections = apply_filters(
 		'accessibility'      => __( 'Accessibility', 'forminator' ),
 		'appearance-presets' => __( 'Appearance Presets', 'forminator' ),
 		'data'               => __( 'Data', 'forminator' ),
+		'cleantalk'          => __( 'CleanTalk', 'forminator' ),
 		'captcha'            => __( 'CAPTCHA', 'forminator' ),
 		'import'             => __( 'Import', 'forminator' ),
 		'submissions'        => __( 'Submissions', 'forminator' ),
@@ -76,6 +77,7 @@ if ( current_user_can( forminator_get_admin_cap() ) ) {
 
 	<?php $this->template( 'settings/tab-general' ); ?>
 	<?php $this->template( 'settings/tab-recaptcha' ); ?>
+    <?php $this->template( 'settings/tab-cleantalk' ); ?>
 	<?php $this->template( 'settings/tab-appearance-presets' ); ?>
 	<?php $this->template( 'settings/tab-data' ); ?>
 	<?php $this->template( 'settings/tab-submissions' ); ?>
